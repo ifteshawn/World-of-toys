@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width">
+		<title>World Of Toys</title>
+		<link rel="stylesheet" href="WorldOfToys.css" />
+	</head>
+
+<body>
+	<div class="logo">
+        <img class="shoplogo" src="graphics/logo.png" alt="world-of-toys-logo" />
+    </div>
+    <!--navigation menu div -->
+    <div class="navmenudiv">
+        <!--initially invisible menu button. Displayed for mobile only-->
+        <!-- Once visibile, clicking on menu icon displays menu/navigation options -->
+        <div class="menu" onclick="menuAction()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul id="list1">
+            <li><a href="WorldOfToys.html">Home</a></li>
+            <!--categories dropdown menu div of nav menu -->
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Categories</button>
+                    <div class="dropdown-content">
+                        <a href="board_games.html">Board Games</a>
+                        <a href="lego_models.html">Lego Models</a>
+                        <a href="rc_toys.html">RC Toys</a>
+                        <a href="playing_cards.html">Playing Cards</a>
+                    </div>
+                </div>
+            </li>
+            <!-- <li><a href="">Categories</a></li> -->
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="operation_hours.html">Operation Hours</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="subscribe.html">Subscribe</a></li>
+        </ul>
+    </div>
+
+	<!--Content section - welcome -->
+	<div class="welcome">
+		<h1>Welcome!</h1>
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+			industry's
+			standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+			make
+			a type specimen book. It has survived not only five centuries, but also the leap into electronic
+			typesetting,
+			remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+			containing
+			Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+			versions
+			of Lorem Ipsum.</p>
+	</div>
+	<div class="shop-map">
+		<!--shop layout section-->
+		<h1 style="text-align:left;">Shop Layout</h1>
+		<div>
+			<img class="shoplayout" src="graphics/floor_plan.png" alt="shop-layout" usemap="#workmap">
+			<map name="workmap">
+				<area shape="circle" coords="147,178,75" alt="cup of coffee" href="board_games.html">
+				<area shape="circle" coords="289,279,60" alt="cup of coffee" href="playing_cards.html">
+				<area shape="circle" coords="446,186,75" alt="cup of coffee" href="lego_models.html">
+				<area shape="circle" coords="299,447,75" alt="cup of coffee" href="rc_toys.html">
+			</map>
+			<p style="text-align: center;">Click on shop section to browse.</p>
+		</div>
+	</div>
+	</div>
+	 <!-- bottom section of the page -->
+	 <div class="bottom">
+        <h3>Our Shop</h3>
+        <a class="bottomcontent" href="about_us.html">About Us</a>
+        <a class="bottomcontent" href="operation_hours.html">Operation hours</a>
+        <a class="bottomcontent" href="location.html">Location</a>
+        <a class="bottomcontent" href="subscribe.html">Subscribe</a>
+        <p class="copyright">© 2021 World of Toys</p>
+    </div>
+    <!-- javascript to control menu display -->
+    <script src="menuaction.js"></script>
+</body>
+
+</html>

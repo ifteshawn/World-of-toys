@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Shop Opening Hours</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="WorldOfToys.css">
+    <script src="subscription.js"></script>
+</head>
+
+<body>
+    <div class="logo">
+        <img class="shoplogo" src="graphics/logo.png" alt="world-of-toys-logo" />
+    </div>
+    <!--navigation menu div -->
+    <div class="navmenudiv">
+        <!--initially invisible menu button. Displayed for mobile only-->
+        <div class="menu" onclick="menuAction()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul id="list1">
+            <li><a href="WorldOfToys.html">Home</a></li>
+            <!--categories dropdown menu div of nav menu -->
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Categories</button>
+                    <div class="dropdown-content">
+                        <a href="board_games.html">Board Games</a>
+                        <a href="lego_models.html">Lego Models</a>
+                        <a href="rc_toys.html">RC Toys</a>
+                        <a href="playing_cards.html">Playing Cards</a>
+                    </div>
+                </div>
+            </li>
+            <!-- <li><a href="">Categories</a></li> -->
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="operation_hours.html">Operation Hours</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="subscribe.html">Subscribe</a></li>
+        </ul>
+    </div>
+    <!-- Content section of the page: Subscription form -->
+    <div class="welcome">
+        <div id="subscriptionForm">
+            <h1>To subscribe to our newsletter, please submit your following details:</h1>
+            <br>
+            <form action="subscriptionInfo.html">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="nameLabel">Name: </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name" name="custName" required placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="ageLabel">Age:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="number" id="age" name="custAge" required placeholder="Your age..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="genderLabel">Gender:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="gender" name="custGender" required placeholder="Your gender..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="originLabel">Country of Origin:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="origin" name="custOrigin" required placeholder="Your origin..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="emailLabel">Email:</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" name="custEmail" required placeholder="Your email..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="commentsLabel">Comments:</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="comments" name="custComments" required placeholder="Your comments.."
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="interestsLabel">Personal Interests:</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="interests" name="custInterests" required placeholder="Your interests.."
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <!-- submit button runs input validations and calls displayInfo() to save input to local storage and displaying on new window  -->
+                    <input type="submit" value="Submit" onClick="displayInfo()">
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- bottom section of the page -->
+    <div class="bottom">
+        <h3>Our Shop</h3>
+        <a class="bottomcontent" href="about_us.html">About Us</a>
+        <a class="bottomcontent" href="operation_hours.html">Operation hours</a>
+        <a class="bottomcontent" href="location.html">Location</a>
+        <a class="bottomcontent" href="subscribe.html">Subscribe</a>
+        <p class="copyright">© 2021 World of Toys</p>
+    </div>
+    <!-- javascript to control menu display -->
+    <script src="menuaction.js"></script>
+</body>
+
+</html>

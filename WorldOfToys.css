@@ -1,0 +1,389 @@
+/*to remove default margin of body*/
+body {
+  margin: 0;
+}
+
+/*remove default margin*/
+h1 {
+  margin: 0;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*remove default margin*/
+p {
+  margin: 0;
+}
+
+/*website top section styling for logo*/
+.logo {
+  background-color: #dab7bf;
+  padding: 1%;
+}
+
+.shoplogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+/* navigation bar */
+.navmenudiv {
+  height: 5vh;
+  background-color: #bd3939;
+  width: 100%;
+}
+
+/* navigation menu options */
+ul {
+  display: flex;
+  margin: 0px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* individuals links styling in navigation menu */
+li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+  padding-right: 30px;
+  display: inline;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+
+li a:hover {
+  color: #dab7bf;
+}
+
+/* Dropdown Button for categories in the nav menu */
+.dropbtn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+  border: none;
+  /* padding-right: 0px;
+  padding-left: 0; */
+  padding: 0;
+  background-color: #bd3939;
+}
+
+.dropbtn:hover {
+  color: #dab7bf;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #dab7bf;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #bd3939;
+}
+
+/*styling for section below nav menu div. */
+.welcome {
+  background-color: #f8f4ff;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  text-align: justify;
+  line-height: 1.5;
+  font-weight: 400;
+  color: black;
+}
+
+/* page middle section div for items info */
+.itemsDiv {
+  background-color: #f8f4ff;
+  font-family: "Montserrat", sans-serif;
+  padding: 0px;
+  text-align: justify;
+  line-height: 1.5;
+  font-weight: 400;
+  color: black;
+}
+
+/* floor layout div */
+.shoplayout {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* map for enabling clickable section of shop floor layout image */
+.shop-map {
+  background: #dab7bf;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: black;
+}
+
+/*bottom footer section of webpage*/
+.bottom {
+  clear: both;
+  background-color: #bd3939;
+  padding: 20px;
+  text-align: center;
+}
+
+.bottomcontent {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.bottomcontent:hover {
+  color: #dab7bf;
+}
+
+.copyright {
+  color: #dab7bf;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+
+/*styling for item image*/
+.toyimage {
+  max-width: 100%;
+}
+
+/* individual toy div styling */
+.col1 {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* opening hours tables display */
+td {
+  padding: 20px 20px 20px 0px;
+  text-align: justify;
+}
+
+/* subscription form styling */
+input[type="text"],
+textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type="number"],
+textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type="email"],
+textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+/* subscription form label styling */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* subcription form submit button styling */
+input[type="submit"] {
+  background-color: #bd3939;
+  color: black;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 6%;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  color: blanchedalmond;
+}
+
+/* Subscription Form stylings */
+/* styling for label */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  font-weight: bold;
+}
+
+/* styling for input field */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* styling for subscription details display */
+.col-25out {
+  font-weight: bold;
+  float: left;
+  width: 20%;
+  margin-top: 6px;
+}
+
+.col-75out {
+  float: left;
+  width: 80%;
+  margin-top: 18px;
+}
+
+/* Responsive layout - when the screen is less than 500px wide*/ 
+@media screen and (max-width: 500px) {
+  /* positions and sizes the div containing the navigation menu */
+  .navmenudiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 45px;
+  }
+
+
+  /* styling for hamburger menu div, also makes it clickable */
+  .menu {
+    position: relative;
+    cursor: pointer;
+    top: 15%;
+    left: 3%;
+    z-index: 2;
+  }
+
+
+  /* creates the clickable hamburger menu image */
+  .line {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 6px;
+  }
+
+  /* Styling for navigation menu. Hides the navigation menu options on mobile display */
+  #list1 {
+    /*nav-links*/
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #bd3939;
+    margin-right: 50px;
+    height: 100vh;
+
+    width: 90%;
+    justify-content: space-around;
+    flex-direction: column;
+    display: none;
+  }
+
+  /* adjusts the floor plan image to resize to 500px mobile display */
+  .shoplayout {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  /* Adjusts the map for the clickable image section*/
+  .shop-map {
+    height: auto;
+    width: auto;
+  }
+
+  /* product items individual div styling */
+  .col1 {
+    float: left;
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+  }
+
+/* Subscription form layout: 
+    makes the columns stack on top of each other instead of next to each other */
+  .col-25,
+  .col-75 {
+    font-weight: bold;
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .col-25out,
+  .col-75out {
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  input[type="submit"] {
+    width: 96%;
+    margin-top: 0;
+    margin-right: 0;
+    float: left;
+  }
+}

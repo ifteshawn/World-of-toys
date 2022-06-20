@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Shop Opening Hours</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="WorldOfToys.css">
+</head>
+
+<body>
+  <div class="logo">
+    <img class="shoplogo" src="graphics/logo.png" alt="world-of-toys-logo" />
+  </div>
+  <!--navigation menu div -->
+  <div class="navmenudiv">
+    <!--initially invisible menu button. Displayed for mobile only-->
+    <div class="menu" onclick="menuAction()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <ul id="list1">
+      <li><a href="WorldOfToys.html">Home</a></li>
+      <!--categories dropdown menu div of nav menu -->
+      <li>
+        <div class="dropdown">
+          <button class="dropbtn">Categories</button>
+          <div class="dropdown-content">
+            <a href="board_games.html">Board Games</a>
+            <a href="lego_models.html">Lego Models</a>
+            <a href="rc_toys.html">RC Toys</a>
+            <a href="playing_cards.html">Playing Cards</a>
+          </div>
+        </div>
+      </li>
+      <!-- <li><a href="">Categories</a></li> -->
+      <li><a href="about_us.html">About Us</a></li>
+      <li><a href="operation_hours.html">Operation Hours</a></li>
+      <li><a href="location.html">Location</a></li>
+      <li><a href="subscribe.html">Subscribe</a></li>
+    </ul>
+  </div>
+  
+  <!-- Content section of the page -->
+  <div class="welcome">
+    <h1>Shop Opening Hours</h1>
+    <table>
+      <tr>
+        <td style="font-weight: bold;">Monday - Thursday:</td>
+        <td>10:00am to 4:00pm</td>
+      </tr>
+      <tr>
+        <td style="font-weight: bold;">Friday:</td>
+        <td>10:00am to 1:00pm || 2:00pm to 6:00pm</td>
+      </tr>
+      <tr>
+        <td style="font-weight: bold;">Saturday:</td>
+        <td>8:00am to 4:00pm</td>
+      </tr>
+      <tr>
+        <td style="font-weight: bold;">Sunday:</td>
+        <td>Closed</td>
+      </tr>
+      <tr>
+        <td style="font-weight: bold;">Public Holidays:</td>
+        <td>Closed</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- bottom section of the page -->
+  <div class="bottom">
+    <h3>Our Shop</h3>
+    <a class="bottomcontent" href="about_us.html">About Us</a>
+    <a class="bottomcontent" href="operation_hours.html">Operation hours</a>
+    <a class="bottomcontent" href="location.html">Location</a>
+    <a class="bottomcontent" href="subscribe.html">Subscribe</a>
+    <p class="copyright">© 2021 World of Toys</p>
+  </div>
+  <!-- javascript to control menu display -->
+  <script src="menuaction.js"></script>
+</body>
+
+</html>

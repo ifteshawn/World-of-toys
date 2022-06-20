@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+    <title>Board Games</title>
+    <link rel="stylesheet" href="WorldOfToys.css" />
+</head>
+
+<body>
+    <div class="logo">
+        <img class="shoplogo" src="graphics/logo.png" alt="world-of-toys-logo" />
+    </div>
+    <!--navigation menu div -->
+    <div class="navmenudiv">
+        <!--initially invisible menu button. Displayed for mobile only-->
+        <div class="menu" onclick="menuAction()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul id="list1">
+            <li><a href="WorldOfToys.html">Home</a></li>
+            <!--categories dropdown menu div of nav menu -->
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Categories</button>
+                    <div class="dropdown-content">
+                        <a href="board_games.html">Board Games</a>
+                        <a href="lego_models.html">Lego Models</a>
+                        <a href="rc_toys.html">RC Toys</a>
+                        <a href="playing_cards.html">Playing Cards</a>
+                    </div>
+                </div>
+            </li>
+            <!-- <li><a href="">Categories</a></li> -->
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="operation_hours.html">Operation Hours</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="subscribe.html">Subscribe</a></li>
+        </ul>
+    </div>
+
+    <!-- Content section of the page to show products -->
+    <div class="itemsDiv">
+        <div class="col1">
+            <h2>Java</h2>
+            <img class="toyimage" src="graphics/board_games/bg1.jpg" alt="board game- Java" />
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                corrupti veniam sunt et expedita veritatis illum aliquid maxime
+                pariatur. Eligendi, vel tempore aspernatur facilis et molestiae
+                suscipit animi quo eveniet.
+            </p>
+        </div>
+
+        <div class="col1">
+            <h2>Memoir'44</h2>
+            <img class="toyimage" src="graphics/board_games/bg2.jpg" alt="board game- Memoir'44" />
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                corrupti veniam sunt et expedita veritatis illum aliquid maxime
+                pariatur. Eligendi, vel tempore aspernatur facilis et molestiae
+                suscipit animi quo eveniet.
+            </p>
+        </div>
+
+        <div class="col1">
+            <h2>Monopoly</h2>
+            <img class="toyimage" src="graphics/board_games/bg3.jpg" alt="board game- Monopoly" />
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                corrupti veniam sunt et expedita veritatis illum aliquid maxime
+                pariatur. Eligendi, vel tempore aspernatur facilis et molestiae
+                suscipit animi quo eveniet.
+            </p>
+        </div>
+
+        <div class="col1">
+            <h2>Scrabble</h2>
+            <img class="toyimage" src="graphics/board_games/bg4.jpg" alt="board game- Scrabble" />
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                corrupti veniam sunt et expedita veritatis illum aliquid maxime
+                pariatur. Eligendi, vel tempore aspernatur facilis et molestiae
+                suscipit animi quo eveniet.
+            </p>
+        </div>
+
+        <div class="col1">
+            <h2>Shogun</h2>
+            <img class="toyimage" src="graphics/board_games/bg5.jpg" alt="board game- Shogun" />
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                corrupti veniam sunt et expedita veritatis illum aliquid maxime
+                pariatur. Eligendi, vel tempore aspernatur facilis et molestiae
+                suscipit animi quo eveniet.
+            </p>
+        </div>
+
+        <div class="col1">
+            <h2>Ticket to Ride</h2>
+            <img class="toyimage" src="graphics/board_games/bg6.jpg" alt="board game- Ticket to ride" />
+            <p1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                corrupti veniam sunt et expedita veritatis illum aliquid maxime
+                pariatur. Eligendi, vel tempore aspernatur facilis et molestiae
+                suscipit animi quo eveniet.
+            </p1>
+        </div>
+
+        <div class="col1">
+            <h2>Tikal</h2>
+            <img class="toyimage" src="graphics/board_games/bg7.jpg" alt="board game- Tikal" />
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                corrupti veniam sunt et expedita veritatis illum aliquid maxime
+                pariatur. Eligendi, vel tempore aspernatur facilis et molestiae
+                suscipit animi quo eveniet.
+            </p>
+        </div>
+    </div>
+
+    <!-- bottom section of the page -->
+    <div class="bottom">
+        <h3>Our Shop</h3>
+        <a class="bottomcontent" href="about_us.html">About Us</a>
+        <a class="bottomcontent" href="operation_hours.html">Operation hours</a>
+        <a class="bottomcontent" href="location.html">Location</a>
+        <a class="bottomcontent" href="subscribe.html">Subscribe</a>
+        <p class="copyright">© 2021 World of Toys</p>
+    </div>
+    <!-- javascript to control menu display -->
+    <script src="menuaction.js"></script>
+</body>
+
+</html>
